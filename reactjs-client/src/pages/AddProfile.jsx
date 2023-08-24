@@ -25,7 +25,7 @@ function AddProfile() {
     setShowLoadingModal(true);
 
     const newProfile = await axios.post(
-      'https://developer-profiles-project-youtube-live.onrender.com/api/v1/profiles/create-profile',
+      'https://developers-profiles.onrender.com/api/v1/profiles/create-profile',
       profileData
     );
 

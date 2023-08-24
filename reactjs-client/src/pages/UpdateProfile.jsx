@@ -25,7 +25,7 @@ function UpdateProfile() {
 
     // fetch user and add to the update profile form
 
-    const url = `https://developer-profiles-project-youtube-live.onrender.com/api/v1/profiles/get-profile/${profileId}`;
+    const url = `https://developers-profiles.onrender.com/api/v1/profiles/get-profile/${profileId}`;
 
     const handleGetProfile = async () => {
       // implementing data fetching with axios
@@ -57,7 +57,7 @@ function UpdateProfile() {
     setShowLoadingModal(true);
 
     const updatedProfile = await axios.patch(
-      `https://developer-profiles-project-youtube-live.onrender.com/api/v1/profiles/update-profile/${profileId}`,
+      `https://developers-profiles.onrender.com/api/v1/profiles/update-profile/${profileId}`,
       profileData
     );
     // console.log(updatedProfile);

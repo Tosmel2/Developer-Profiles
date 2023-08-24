@@ -17,7 +17,7 @@ function Home() {
 
   useEffect(() => {
     const url =
-      'https://developer-profiles-project-youtube-live.onrender.com/api/v1/profiles/get-all-profiles';
+      'https://developers-profiles.onrender.com/api/v1/profiles/get-all-profiles';
 
     const handleFetchData = async () => {
       // implementing data fetching with axios
@@ -46,7 +46,7 @@ function Home() {
     handleHideModal();
 
     const deletedProfile = await axios.delete(
-      `https://developer-profiles-project-youtube-live.onrender.com/api/v1/profiles/delete-profile/${profileIdToDelete}`
+      `https://developers-profiles.onrender.com/api/v1/profiles/delete-profile/${profileIdToDelete}`
     );
 
     console.log(deletedProfile);
